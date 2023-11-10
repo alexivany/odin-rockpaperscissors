@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+
+:root {
+  --fw-thin: 100;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+.body-container {
+  margin: 0 auto;
+  width: 30rem;
+  text-align: center;
+  padding: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.button-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+button {
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+  transition: transform 200ms;
+}
+button:hover {
+  transform: scale(1.2);
+}
+
+#paper {
+  margin: 0 auto;
+}
+#rock {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+#scissors {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+
+.scores-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.scores-container div {
+  padding: 0.5rem;
+}
+
+.result {
+  padding: 2rem;
+  font-weight: var(--fw-bold);
+}
+.choice-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.winner {
+  border-bottom: 2px solid red;
+  font-weight: var(--fw-bold);
+}
